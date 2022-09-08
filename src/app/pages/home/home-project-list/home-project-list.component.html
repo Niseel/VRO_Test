@@ -1,0 +1,12 @@
+<!-- <p>{{ projects | json }}</p> -->
+<div class="wrap-project-list">
+  <div class="project-list" *ngFor="let project of projects; let i = index">
+    {{ project.project }} | {{ project.operator }} | {{ project.country }} |
+    {{ project.region }}
+    <app-home-rig-list [rigs]="project.rig"></app-home-rig-list>
+  </div>
+</div>
+
+<!-- <p>
+  <app-home-rig-list [ProjectList]="projects"></app-home-rig-list>
+</p> -->

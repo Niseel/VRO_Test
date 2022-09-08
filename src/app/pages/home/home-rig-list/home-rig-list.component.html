@@ -1,0 +1,6 @@
+<div class="wrap-rig-list">
+  <div class="rig-list" *ngFor="let rig of rigs; let i = index">
+    <!-- {{ rig | json }} -->
+    <app-home-rig-item [rig]="rig"></app-home-rig-item>
+  </div>
+</div>

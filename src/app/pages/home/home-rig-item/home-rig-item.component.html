@@ -1,0 +1,35 @@
+<!-- <p>{{ rig | json }}</p> -->
+<div class="wrap-rig-item">
+  <div>RIG | SITE | FIELD</div>
+  <div class="rig-item">
+    <div class="rig-item-image">
+      <img [src]="rig.image" alt="iamge of rig item" />
+    </div>
+    <div class="rig-item-info">
+      <div class="text-info">
+        ACTIVE WELL: <span>{{ rig.well }}</span>
+      </div>
+      <div class="text-info">
+        ACTIVE WELLBORE:
+        <span>
+          {{ rig.wellBore }}
+        </span>
+      </div>
+      <div class="text-info">
+        ACTIVE HOLE SECTION: <span>{{ rig.holeSection }}</span>
+      </div>
+      <div class="text-info">
+        ACTIVE RUN:<span> {{ rig.run }}</span>
+      </div>
+      <div class="text-info">
+        ACTIVE RUN PURPOSE: <span>{{ rig.runPurpose }}</span>
+      </div>
+      <div class="text-info">
+        ACTIVE SCOPE OF WORK:<span> {{ rig.scopeOfWork }}</span>
+      </div>
+      <div class="text-info">
+        ACTIVE START DATE: <span>{{ rig.startDate }}</span>
+      </div>
+    </div>
+  </div>
+</div>
